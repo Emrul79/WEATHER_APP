@@ -11,6 +11,7 @@ const useWeather = () => {
     cloudPercentage: "",
     wind: "",
     time: "",
+    timezone: "",
     longitude: "",
     latitude: "",
   });
@@ -54,6 +55,7 @@ const useWeather = () => {
         cloudPercentage: data?.clouds?.all,
         wind: data?.wind?.speed,
         time: data?.dt,
+        timezone: data?.timezone,
         longitude: data?.coord?.lon,
         latitude: data?.coord?.lat,
       };
