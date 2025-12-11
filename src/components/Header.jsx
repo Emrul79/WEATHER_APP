@@ -1,5 +1,4 @@
 import React from "react";
-import HeartIcon from "../assets/heart.svg";
 import FavouriteMOdal from "./FavouriteMOdal";
 import Logo from "./Logo";
 import SearchBox from "./SearchBox";
@@ -12,10 +11,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4 relative">
           <SearchBox />
-          <div className="p-2 hover:bg-black/30 cursor-pointer flex gap-2 items-center rounded-md transition-all">
-            <img src={HeartIcon} alt="" />
-            <span>Favourite Locations here</span>
-          </div>
+
           <FavouriteMOdal />
         </div>
       </nav>
